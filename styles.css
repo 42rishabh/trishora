@@ -43,7 +43,6 @@ h2 {
 }
 
 .btn {
-    display: inline-block;
     width: 100%;
     background: linear-gradient(to right, #0077ff, #00d0c6);
     color: #fff;
