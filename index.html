@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="styles.css">
         
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1228640765753925');
-fbq('track', 'PageView');
-</script>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1228640765753925');
+        fbq('track', 'PageView');
+    </script>
 
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1228640765753925&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1228640765753925&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
 </head>
 <body>
 
@@ -33,7 +34,18 @@ src="https://www.facebook.com/tr?id=1228640765753925&ev=PageView&noscript=1"
         <h2>Mehta is back official 📊🏆</h2>
         <p class="subtext">📊 10+ years experience 📈</p>
 
-        <a href="https://t.me/+0gYaSvD3PFljZDY1" target="_blank" class="btn">
+
+        <a href="https://t.me/+0gYaSvD3PFljZDY1" 
+        onclick="
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'TelegramJoin');
+            }
+            setTimeout(function () {
+                window.location.href='https://t.me/+0gYaSvD3PFljZDY1';
+            }, 150);
+            return false;"
+        target="_blank"
+        class="btn">
             🚀 Join Telegram 💬
         </a>
 
